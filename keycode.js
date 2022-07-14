@@ -11,7 +11,7 @@ h3.style.margin = "10rem auto 2rem";
 
 // box
 let box = document.createElement("div");
-document.body.addEventListener("keypress", (e) => {
+document.body.addEventListener("keydown", (e) => {
   box.style.height = "4rem";
   box.style.width = "4rem";
   box.style.margin = "1rem auto";
@@ -25,7 +25,7 @@ document.body.addEventListener("keypress", (e) => {
   body.appendChild(box);
   box.textContent = e.keyCode;
   const key = document.createElement("span");
-  key.textContent = event.code;
+  key.textContent = event.key;
   key.style.color = "#69c185";
   h3.textContent = `You pressed `;
   h3.append(key);
