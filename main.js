@@ -11,7 +11,6 @@ p.style.marginTop = "-1rem";
 // div style
 const div = document.querySelector(".container");
 div.style.maxWidth = "70%";
-// div.style.height = "50vh";
 div.style.display = "flex";
 div.style.flexWrap = "wrap";
 div.style.margin = "2rem auto";
