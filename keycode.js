@@ -30,19 +30,3 @@ document.body.addEventListener("keypress", (e) => {
   h3.textContent = `You pressed `;
   h3.append(key);
 });
-
-function checkKey(key) {
-  return (
-    (key >= "0" && key <= "9") ||
-    [
-      "+",
-      "(",
-      ")",
-      "-",
-      "ArrowLeft",
-      "ArrowRight",
-      "Delete",
-      "Backspace",
-    ].includes(key)
-  );
-}
